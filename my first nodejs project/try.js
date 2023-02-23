@@ -1,41 +1,4 @@
-/*
 
-FILES
-const fs=require('fs')
-const text_input=fs.readFileSync('./text.txt','utf-8');
-console.log(text_input);
-const txtout=`this file belongs to ${text_input} and it was created on ${Date.now()} \nth feburary`;
-fs.writeFileSync('./text.txt',txtout);
-
-
-const fs=require('fs')
-fs.readFile('text.txt','utf-8',(err,data1) =>{
-    console.log(data1);
-    fs.readFile(`${data1}.txt`,'utf-8',(err,data2) =>{
-        console.log(data2);
-        fs.readFile(`${data2}.txt`,'utf-8',(err,data3)=>{
-            fs.writeFile('output.txt',`${data1}\n${data3}`, 'utf-8',err=>{
-                console.log("data overwritten");
-            })
-        })
-    })
-
-})
-console.log("just to check which command gets first executed");
-
-*/
-
-//SERVER
-
-/*const http=require('http');
-const server=http.createServer((req,res)=>{
-    res.end("Hello from the server side");
-})
-server.listen(8000,'127.0.0.1',()=>{
-    console.log("Listening to the port on 8000");
-})*/
-
-///routing with api
 const fs=require('fs');
 const url=require('url');
 const http=require('http');
